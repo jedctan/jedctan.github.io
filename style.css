@@ -141,11 +141,57 @@ h1 span:nth-child(even) {
 
 /* Projects */
 
-.column-left2 {
+.projects-content {
+  background: #ffffff;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+/* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 3rem calc((100vw - 1300px) / 2);
+*/
+}
+
+.projects-column-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: flex-start;
-  color: #000;
+  color: #000000;
   padding: 0rem 2rem;
+}
+
+.projects-proj1 {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: #6d513f; 
+  line-height: 1.5;
+}
+
+.projects-column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+  color: #000000;
+  padding: 0rem 2rem;
+}
+
+.projects-column-right iframe {
+  width: 100%;
+  height: calc(50vh - 40px);
+}
+
+.projects-column-right .video-container{
+  width: 100%;
+  height: calc(50vh - 40px);
 }
