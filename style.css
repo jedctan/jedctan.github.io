@@ -64,7 +64,7 @@ nav a:hover {
   line-height: 1.5;
 }
 
-button {
+.button-resume {
   padding: 1rem 3rem;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -75,7 +75,7 @@ button {
   border-radius: 50px;
 }
 
-button:hover {
+.button-resume:hover {
   background: #ddd0c86c;
   color: #000;
 }
@@ -139,6 +139,47 @@ h1 span:nth-child(even) {
   animation-delay: 0.1s;
 }
 
+/* Project Select Menu */
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #f2f2f2;
+}
+
+.grid-item button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-item:hover button {
+  transform: scale(1.2);
+}
+
+.grid-item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Projects */
 
 .projects-content {
@@ -148,7 +189,7 @@ h1 span:nth-child(even) {
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  /* height: 95vh; */
   padding: 3rem calc((100vw - 1300px) / 2);
 }
 
@@ -171,6 +212,7 @@ ul li::marker {
 }
 
 .projects-column-right {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: top;
@@ -181,10 +223,11 @@ ul li::marker {
 
 .projects-column-right iframe {
   width: 100%;
-  height: calc(50vh - 40px);
+  margin-bottom: 20px;
 }
 
-.projects-column-right .video-container{
-  width: 100%;
-  height: calc(50vh - 40px);
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
