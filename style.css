@@ -172,9 +172,6 @@ h1 span:nth-child(even) {
 
 /* Project Select Menu */
 
-.projselect-buttons {
-  background-color: #ccd5ae;
-}
 
 .grid {
   margin-top: 20px;
@@ -273,4 +270,20 @@ ul li::marker {
   .projects-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* Design */
+
+.design-content {
+  background: #ffffff;
+}
+
+.design-images{
+  max-width: 50%;
+  height: auto;
+}
+
+.syringe{
+  max-width: 75%;
+  height: auto;
 }
