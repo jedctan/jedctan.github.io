@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jed's Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Plyr CSS (custom video player) -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <!-- AOS library (animate on scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  </head>
+  <body>
+    <nav> 
+      <div class="logo">Matlab Projects</div>
+      <div class="nav-items">
+        <a href="/">Home</a> <a href="/">About</a> <a href="#" onclick="window.location.href='projects-selection.html'">Projects</a>
+      </div>
+    </nav>
+    <!-- SECTION 1 -->
+    <section class="projects-content">
+      <div class="projects-container">
+        <div class="projects-column-left">
+          <h2> Background </h2>
+            <p> 
+              Dassault Syst&#x00E9;mes is a large software company specializing in 3D design, 3D digital mock-up, 
+              product lifecyle management, simulation, manufacturing, and mmany more software solutions. My role as a product management intern
+              was within the Solidworks department, which is their main 3D computer-aided design (CAD) software.<br><br>
+              This goal of this project was to create an internal tool that was able to modify a model based on user-entered parameters. I'm not allow to get into specifics,
+              but it was going to be used in various demos and marketing materials. 
+              <br><br>
+              <b>To accomplish this task I followed these steps:</b>
+              <ol>
+                <li>Create Model: Design a cart with dimensions that were all linked with equations.</li>
+                <li>Solidworks API: Reference needed DLL files in Visual Studio Project and use API functions to create a script that can update part dimensions.</li>
+                <li>Construct Add-in: Create add-in that is recognizable by Solidworks and has an intuitive UI that allows the user to enter in parameters to change the model.</li>
+              </ol>
+              <br><br>
+              <b>Script Workflow:</b>
+            </p>
+        </div>
+
+        <div class="projects-column-right">
+            <img src="DS.png", width=75%>
+            <br><br><br>
+            <img src="SOLIDWORKS.svg", width="100%">
+     
+
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/LHIYMRXrWhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        </div>
+
+            <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSrLGCKCmE6wL41ohU9wBHvjjX3up9lcjha3lClMyVsi7uS-QnO2MLfWYJ0RTtTUXR8awDjoEKgPPxD/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+        </div>
+    </section>
+
+    <center>
+      <img src ="script_workflow.png", width=75%>
+    </center>
+    
+    <!-- SECTION 2 -->
+    <section class="projects-content">
+      <div class="projects-container">
+        <div class="projects-column-left">
+          <h2>The Add-in</h2>
+          <br>
+          <b>Key files in the project:</b>
+          <ol>
+            <li>PMPHandler.cs: Handled any interactions the user had with the Property Manager Page</li>
+            <li>ScissorLift.cs: Contains script to change model</li>
+            <li>TaskpaneUI.cs: Contains all UI elements of the add-in</li>
+            <li>UserPMPage.cs: Contains all elements of the Property Manager Page</li>
+            <li>SwAddin.cs: Handles UI callbacks, ex: when Create/Update Model is pressed this will run ScissorLift.cs</li>
+            <li>Other Files: EventHandling.cs, SharedData.cs, AssemblyInfo.cs</li>
+          </ol>
+          <br>
+          Once the project was completed, I built the project and registered using RegAsm.exe, in my case I used a Strong Name Tool (sn.exe) to avoid any potential issues with registering
+        </div>
+
+        <div class="projects-column-right">
+          <div class="plyr__video-embed" id="player">
+            <iframe
+            src="https://www.youtube.com/embed/50diuNOkhJY"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <section class="projects-content">
+      <div class="projects-container">
+        <div class="projects-column-left">
+          <h2>Results </h2>
+            I was able to create a Solidworks add-in that automated the design process and allowed users to create infinite configurations of a 3D model based on entered parameters. 
+            This tool is now being utilized by my team for demos, product testing, and marketing. <br><br> Prior to this project I had only taken one computer science course on Python, so this was a very difficult process that took a lot of self-learning. 
+            I'm very proud of this project and am happy that my work made an impact.
+        </div>
+
+        <div class="projects-column-right">
+          <img src="ScissorLift3Sizes.png", width="90%">
+        </div>
+    </section>
+    </div>
+  
+  <!-- GAME -->
+  <!-- <div id="game-area">
+      <div id="character"></div>
+  </div> -->
+  
+  <!-- <script src="game.js"></script> -->
+
+    <!-- Plyr Script (custom youtube video player) -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <script>
+      const player = new Plyr('#player');
+    </script>
+    
+    <!-- AOS Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+      });
+    </script>
+    
+  </body>
+</html>

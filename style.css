@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+ background-color: #ffffff;
+}
+
+nav {
+  height: 80px;
+  background: #606c38;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* font-style: italic; */
+  padding: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: #ccd5ae;
+}
+
+.content {
+  background: #ffffff;
+}
+
+/* #particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  opacity: 0.5;
+} */
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.column-left p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.button-resume {
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border: none;
+  background: #283618;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.button-resume a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-resume::after,.button-resume::after{
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background-color: inherit;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+
+}
+
+.button-resume:hover {
+  transform: translate(-12px, -12px)
+}
+
+.button-resume:hover::after{
+  transform: translate(6px, 6px)
+}
+
+.button-resume:hover::before{
+  transform: translate(12px, 12px)
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.profile-pic:hover{
+  opacity: 0.1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  position: relative;
+}
+
+h1:hover span {
+  animation: jump 0.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+h1 span:nth-child(odd) {
+  animation-delay: 0.05s;
+}
+
+h1 span:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+/* Project Select Menu */
+
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #ffffff;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #ffffff;
+}
+
+.grid-item button {
+  /* background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #283618;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-item:hover button {
+  transform: scale(1.2);
+  /* background-color: #ffffff;
+  background-image: url(); */
+}
+
+.grid-item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Projects */
+
+.projects-content {
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 95vh; */
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.projects-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+  color: #000000;
+  padding: 0rem 2rem;
+}
+
+.projects-proj1 {
+  list-style-type: square;
+}
+
+ul li::marker {
+  color: #6d513f; 
+  line-height: 1.5;
+}
+
+.projects-column-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  color: #000000;
+  padding: 0rem 2rem;
+}
+
+
+/* Plyer (custom video player) */
+#player {
+  /* Add the specific styles for the Plyr player container */
+  width: 100%;
+  height: 315px; /* Set an explicit height for the 16:9 aspect ratio */
+  position: relative;
+}
+
+:root {
+  --plyr-color-main: #606c38;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Design */
+
+.design-content {
+  background: #ffffff;
+}
+
+.ambu{
+  max-width: 50%;
+  height: auto;
+  margin-top: 800px;
+}
+
+.reflex-hammer{
+  max-width: 75%;
+  height: auto;
+  transition: transform 0.3s;
+  transform: translateZ(20px);
+}
+
+.syringe{
+  max-width: 75%;
+  height: auto;
+  margin-top: 800px;
+}
+
+/* Scroll Up Animations */
+
+@keyframes floatUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.section-animation {
+  animation: floatUp 1s ease-in-out;
+}
+
+/* GAME */
+#game-area {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  border: 1px solid black;
+}
+
+#character {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+}
