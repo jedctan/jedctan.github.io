@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jed's Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Plyr CSS (custom video player) -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <!-- AOS library (animate on scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  </head>
+  <body>
+    <nav> 
+      <div class="logo">Self-Taught Coding Journey</div>
+      <div class="nav-items">
+        <a href="/">Home</a> <a href="/">About</a> <a href="#" onclick="window.location.href='projects-selection.html'">Projects</a>
+      </div>
+    </nav>
+    <!-- SECTION 1 -->
+    <section class="projects-content">
+      <div class="projects-container">
+        <div class="projects-column-left">
+          <h2>8/20 - Day 1 </h2>
+            <p>
+                My goal this summer was to work on my data structures and algorithms and my leetcode abilities. School is starting up in a couple weeks, and I have done
+                very little preparation for interviews... I am creating this page to log my progress and keep myself accountable as I prepare for technical interviews. I hope
+                I'll be prepared in time!
+            </p>
+        </div>
+
+        <div class="projects-column-right">
+            <h2>Notes</h2>
+            <b>Prefix Sum</b><br>
+            This is a technique that can be used on arrays of numbers. The goal is to create an array <b>prefix</b>
+            where <b>prefix[i]</b> is the sum of all elements up to the index i (inclusive).
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <section class="projects-content">
+        <div class="projects-container">
+          <div class="projects-column-left">
+            <h2> </h2>
+              <p>
+               
+              </p>
+            </ul>
+          </div>
+
+          <div class="projects-column-right">
+
+          </div>
+      </section>
+  </div>
+
+
+    <!-- Plyr Script (custom youtube video player) -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <script>
+      const player = new Plyr('#player');
+    </script>
+    
+    <!-- AOS Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init();
+      });
+    </script>
+    
+  </body>
+</html>
