@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.82485802.css",
-    "main.js": "/static/js/main.745bb28e.js",
+    "main.css": "/static/css/main.43d7e75d.css",
+    "main.js": "/static/js/main.99a795f4.js",
     "static/js/787.cf482a7c.chunk.js": "/static/js/787.cf482a7c.chunk.js",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.b1a23e21411fb1a85ff5.jpg",
     "static/media/ScissorLift3Sizes.png": "/static/media/ScissorLift3Sizes.8cc4a0e4eca1acfd5926.png",
@@ -13,12 +13,12 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "static/media/SOLIDWORKS.svg": "/static/media/SOLIDWORKS.992bcc4c77b558d1da88b353470e6475.svg",
     "index.html": "/index.html",
-    "main.82485802.css.map": "/static/css/main.82485802.css.map",
-    "main.745bb28e.js.map": "/static/js/main.745bb28e.js.map",
+    "main.43d7e75d.css.map": "/static/css/main.43d7e75d.css.map",
+    "main.99a795f4.js.map": "/static/js/main.99a795f4.js.map",
     "787.cf482a7c.chunk.js.map": "/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82485802.css",
-    "static/js/main.745bb28e.js"
+    "static/css/main.43d7e75d.css",
+    "static/js/main.99a795f4.js"
   ]
 }
