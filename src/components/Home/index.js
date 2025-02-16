@@ -72,7 +72,7 @@ const Home = () => {
                 
                 </h1>
                 <h2> Computer Science Major / Student-Athlete / Spectrum Scholar</h2>
-                <Link to="https://github.com/jedctan/jedctan.github.io/raw/caff45e0066c812d933b15510c0a0b6b656a6ec2/Jed-Tan-Resume.pdf" className='flat-button'> RESUME</Link>
+                <Link to="https://github.com/jedctan/jedctan.github.io/raw/105fc3d85e4c7e15f78cdf5e3ce4f55b9f398fb9/public/Jed-Tan-Resume.pdf" className='flat-button'> RESUME</Link>
             </div> 
             <div className="stage-profile">
                 <img src={ProfilePic} alt="illustration" className="profile-pic" />
