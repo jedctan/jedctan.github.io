@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bab7cf16.css",
+    "main.js": "/static/js/main.e1ffa3fc.js",
+    "static/js/787.cf482a7c.chunk.js": "/static/js/787.cf482a7c.chunk.js",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.b1a23e21411fb1a85ff5.jpg",
+    "static/media/ScissorLift3Sizes.png": "/static/media/ScissorLift3Sizes.8cc4a0e4eca1acfd5926.png",
+    "static/media/DS.png": "/static/media/DS.0f5b41e7cfa26179a5af.png",
+    "static/media/unc_logo.jpg": "/static/media/unc_logo.f97a323edec2d0d3a685.jpg",
+    "static/media/Workflow.png": "/static/media/Workflow.1ab24b18c92b9c59e9d4.png",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/SOLIDWORKS.svg": "/static/media/SOLIDWORKS.992bcc4c77b558d1da88b353470e6475.svg",
+    "index.html": "/index.html",
+    "main.bab7cf16.css.map": "/static/css/main.bab7cf16.css.map",
+    "main.e1ffa3fc.js.map": "/static/js/main.e1ffa3fc.js.map",
+    "787.cf482a7c.chunk.js.map": "/static/js/787.cf482a7c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bab7cf16.css",
+    "static/js/main.e1ffa3fc.js"
+  ]
+}
