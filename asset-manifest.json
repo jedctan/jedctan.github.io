@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bab7cf16.css",
-    "main.js": "/static/js/main.e1ffa3fc.js",
+    "main.js": "/static/js/main.ac799923.js",
     "static/js/787.cf482a7c.chunk.js": "/static/js/787.cf482a7c.chunk.js",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.b1a23e21411fb1a85ff5.jpg",
     "static/media/ScissorLift3Sizes.png": "/static/media/ScissorLift3Sizes.8cc4a0e4eca1acfd5926.png",
@@ -14,11 +14,11 @@
     "static/media/SOLIDWORKS.svg": "/static/media/SOLIDWORKS.992bcc4c77b558d1da88b353470e6475.svg",
     "index.html": "/index.html",
     "main.bab7cf16.css.map": "/static/css/main.bab7cf16.css.map",
-    "main.e1ffa3fc.js.map": "/static/js/main.e1ffa3fc.js.map",
+    "main.ac799923.js.map": "/static/js/main.ac799923.js.map",
     "787.cf482a7c.chunk.js.map": "/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bab7cf16.css",
-    "static/js/main.e1ffa3fc.js"
+    "static/js/main.ac799923.js"
   ]
 }
