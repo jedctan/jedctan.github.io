@@ -1,0 +1,70 @@
+.stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+  
+.projects-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px; 
+    height: 100vh;
+    align-items: center;
+  }
+  
+.grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    background-color: #415E55;
+
+  }
+  
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; 
+    width: 200px; 
+    background-color: #415E55;
+    z-index: 1;
+    margin-bottom: 10px; 
+    border-radius: 10%;
+
+
+
+}
+
+
+.grid-item button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #233A2F;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    width: 200px; 
+    height: 200px; 
+    box-sizing: border-box;
+    box-shadow: 0 10px 0 #15291E;
+    border-radius: 10%;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+}
+.grid-item:hover button{
+    box-shadow: 0 5px 0 #15291E; /* Reduced size shadow for squished effect */
+    transform: translateY(5px);
+}
+
+
+  
+  

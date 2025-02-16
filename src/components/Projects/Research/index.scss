@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto; /* This allows the entire page to scroll */
+}
+
+.research-projects-column-left, .research-projects-column-right {
+  flex: 1; 
+}
+
+.title-container {
+  width: 100%; /* Ensures the container spans the full width of the viewport */
+  margin-bottom: 20px; /* Adds some space below the container */
+}
+
+.container.research-page.title {
+  display: flex;
+  margin-left: 125px;
+  width: 80%;
+}
+
+.research-main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+}
+
+.research-projects-column-left {
+  padding: 0rem 2rem;
+  color: white; 
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: large;
+  padding-top: 100px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.research-projects-column-right {
+  padding: 0rem 2rem;
+  color: white; 
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 25px; 
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.research-video-player-container {
+  width: 100%;
+  height: auto;
+  justify-content: center; 
+  align-content: center;
+  max-width: 100%;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.research-main-content.additional-class {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+  flex-wrap: wrap;
+}
+
+.research-projects-column-left.additional-class  {
+   padding: 0rem 2rem;
+   color: white; 
+   margin-left: 100px;
+   margin-right: 100px;
+   padding-top: 25px;
+   font-size: large;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.research-projects-column-right.additional-class  {
+  padding: 0rem 2rem;
+  color: white; 
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  
+}
+
+.google-slides{
+  position: relative;
+  width: 100%; /* Set width */
+  height: 100%; /* Set height */
+  padding-bottom: 0;
+}
+
+.unc-image{
+  width: 90%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-main-content,
+  .research-main-content.additional-class{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .research-projects-column-left,
+  .research-projects-column-right {
+    margin: 10px 5px; /* Adjust margins for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+

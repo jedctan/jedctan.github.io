@@ -1,0 +1,53 @@
+.stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+  
+  .stage-profile {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px; 
+    height: 100vh;
+    align-items: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .profile-pic {
+    position: absolute;
+    right: 15%;
+    border-radius: 50%; /* Makes the image circular */
+    width: 20%;
+    height: auto;
+    border: 3px solid #15291E;
+    z-index: 1;
+    // opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    opacity: 1;
+    transition: 0.5s; /* Smooth transition for opacity change */
+
+}
+
+.profile-pic:hover {
+    opacity: 0.5; /* Decrease opacity when hovered */
+}
+
+
+
+
+  
+  
+  

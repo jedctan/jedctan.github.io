@@ -1,0 +1,27 @@
+.logo-container {
+  position: absolute;
+  top: 20%; /* Adjust to move the logo up or down */
+  right: 5%; /* Adjust to move the logo left or right */
+  width: 686px; /* Updated width (double the original size) */
+  height: 434px; /* Updated height (double the original size) */
+  opacity: 1;
+  z-index: -1;
+}
+
+.logo-container svg {
+  position: absolute;
+  width: 686px; /* Explicit width updated to match new size */
+  height: 434px; /* Explicit height updated to match new size */
+  left: 0;
+  top: 0;
+}
+
+.logo-container img {
+  position: absolute;
+  width: 686px; /* Explicit width updated to match new size */
+  height: 434px; /* Explicit height updated to match new size */
+  left: 0;
+  top: 0;
+  transform: translateY(0.5px) translateX(2px); /* Combines both transformations */
+
+}

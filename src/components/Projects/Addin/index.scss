@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.projects-column-left, .projects-column-right {
+  flex: 1; 
+}
+
+.title-container {
+  width: 100%; /* Ensures the container spans the full width of the viewport */
+  margin-bottom: 20px; /* Adds some space below the container */
+}
+
+.container.addin-page.title {
+  display: flex;
+  margin-left: 125px;
+  width: 80%;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+}
+
+
+.projects-column-left {
+  padding: 0rem 2rem;
+  color: white; 
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: large;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.projects-column-right {
+  padding: 0rem 2rem;
+  color: white; 
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.video-player-container {
+  width: 80%; /* Set width */
+  height: auto; /* Set height */
+  padding-bottom: 50px;
+}
+
+.ds-pic {
+  width: 90%; 
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.sw-pic {
+  width: 100%;
+  height: auto;
+}
+
+.full-width-image {
+  width: 100%; /* Ensures the container spans the full width */
+  display: flex; /* Centers the image within the container */
+  justify-content: center; /* Centers content horizontally */  
+}
+
+.full-width-image img {
+  width: 80%; /* Makes the image span the full width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.main-content.additional-class {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+  flex-wrap: wrap;
+}
+
+.projects-column-left.additional-class  {
+  padding: 0rem 2rem;
+  color: white; 
+  overflow-y: auto; 
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: large;
+}
+
+.projects-column-right.additional-class  {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-right: 100px;
+}
+
+.three-carts {
+  width: 80%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content,
+  .main-content.additional-class{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-column-left,
+  .projects-column-right {
+    margin: 10px 5px; /* Adjust margins for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
